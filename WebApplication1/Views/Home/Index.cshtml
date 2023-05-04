@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html>
+@using Alberts_Dewan_Personal_Project.Models
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link href  = "~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <div class="form-group">
+                    <label for="province-input">Province</label>
+                    <select class="form-control" id="province-input" name="Province">
+                        <option value="Gauteng">Gauteng</option>
+                        <option value="Western Cape">Western Cape</option>
+                        <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                        <option value="Mpumalanga">Mpumalanga</option>
+                        <option value="Limpopo">Limpopo</option>
+                        <option value="North West">North West</option>
+                        <option value="Free State">Free State</option>
+                        <option value="Northern Cape">Northern Cape</option>
+                    </select>
+                </div>
+                <div class="form-control">
+                    <label for="energy-bill-input">Energy Bill (per month)</label>
+                    <input type="number" class="form-control" id="energy-bill-input" name="EnergyBill" placeholder="Enter your monthly energy bill">
+                </div>
+                <div class="form-group">
+                    <label for="people-input">Number of People (living and working from home)</label>
+                    <input type="number" class="form-control" id="people-input" name="NumberOfPeople" placeholder="Enter the number of people in your household">
+                </div>
+                <div class="form-group">
+                    <label for="home-size-input">Size of Home (in square meters)</label>
+                    <input type="number" class="form-control" id="home-size-input" name="HomeSize" placeholder="Enter the size of your home in square meters">
+                </div>
+                <div class="form-group">
+                    <label for="water-pumps-input">Number of Water Pumps</label>
+                    <input type="number" class="form-control" id="water-pumps-input" name="NumberOfWaterPumps" placeholder="Enter the number of water pumps you have">
+                </div>
+                <div class="form-group">
+                    <label for="aircons-input">Number of Air Conditioners</label>
+                    <input type="number" class="form-control" id="aircons-input" name="NumberOfAircons" placeholder="Enter the number of air conditioners you have">
+                </div>
+                <div class="form-group">
+                    <label for="stove-type-input">Type of Stove</label>
+                    <select class="form-control" id="stove-type-input" name="StoveType">
+                        <option value="Electric">Electric</option>
+                        <option value="Gas">Gas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="tumble-dryer-input">Number of Times Tumble Dryer Used per Week</label>
+                    <input type="number" class="form-control" id="tumble-dryer-input" name="NumberOfTumbleDryerUses" placeholder="Enter the number of times per week you use the tumble dryer">
+                </div>
+                <button class="btn btn-primary" style="background-color: green;">Click me!</button>
+            </div>
+        </div>
+    </div>
+ <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
